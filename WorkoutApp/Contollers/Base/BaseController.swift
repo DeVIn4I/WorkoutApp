@@ -16,12 +16,13 @@ class BaseController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        addViews()
+        layoutViews()
         configure()
     }
 }
 
-extension BaseController {
+@objc extension BaseController {
     
     func addViews() { }
     func layoutViews() { }
@@ -29,14 +30,16 @@ extension BaseController {
         view.backgroundColor = Resources.Colors.background
     }
     
-    @objc func navBarLeftButtonHandler() {
+    func navBarLeftButtonHandler() {
         print(#function)
     }
     
-    @objc func navBarRightButtonHandler() {
+    func navBarRightButtonHandler() {
         print(#function)
     }
-    
+}
+
+extension BaseController {
     func addNavBarButton(at position: NavBarPosition, with title: String) {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
