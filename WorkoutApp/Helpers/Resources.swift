@@ -29,6 +29,7 @@ enum Resources {
             static var session = "High Intensity Cardio"
             static var progress = "Workout progress"
             static var settings = "Settings"
+            static var overview = "Today"
         }
         
         enum Session {
@@ -56,6 +57,7 @@ enum Resources {
         
         enum Common {
             static var downArrow = UIImage(named: "DownArrow")
+            static var addButton = UIImage(named: "addButton")
         }
     }
     
