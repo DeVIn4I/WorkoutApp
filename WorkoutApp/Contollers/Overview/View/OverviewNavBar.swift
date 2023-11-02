@@ -9,8 +9,16 @@ import UIKit
 
 final class OverviewNavBar: BaseView {
     
-    private let titleLabel = UILabel()
-    private let allWorkoutsButton = SecondaryButton()
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.NavBar.overview
+        label.textColor = Resources.Colors.titleGray
+        label.font = Resources.Fonts.helveticalRegular(with: 22)
+        return label
+    }()
+    
+    private let allWorkoutsButton = WAButton(with: .secondary)
+
     private let addButton = UIButton()
     
     private let weekView = WeekView()
@@ -32,17 +40,17 @@ final class OverviewNavBar: BaseView {
 }
 
 extension OverviewNavBar {
-    override func addViews() {
-        super.addViews()
-        addView(titleLabel)
-        addView(allWorkoutsButton)
-        addView(addButton)
+    override func setupViews() {
+        super.setupViews()
+        setupView(titleLabel)
+        setupView(allWorkoutsButton)
+        setupView(addButton)
         
-        addView(weekView)
+        setupView(weekView)
     }
     
-    override func layoutView() {
-        super.layoutView()
+    override func constraintViews() {
+        super.constraintViews()
 
         NSLayoutConstraint.activate([
             addButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8),
@@ -54,8 +62,7 @@ extension OverviewNavBar {
         NSLayoutConstraint.activate([
             allWorkoutsButton.topAnchor.constraint(equalTo: addButton.topAnchor),
             allWorkoutsButton.trailingAnchor.constraint(equalTo: addButton.leadingAnchor, constant: -16),
-            allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28),
-            allWorkoutsButton.widthAnchor.constraint(equalToConstant: 130)
+            allWorkoutsButton.heightAnchor.constraint(equalToConstant: 28)
         ])
         
         NSLayoutConstraint.activate([
@@ -73,16 +80,11 @@ extension OverviewNavBar {
         ])
     }
     
-    override func configureView() {
-        super.configureView()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .white
-        
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Colors.titleGray
-        titleLabel.font = Resources.Fonts.helveticalRegular(with: 22)
-        
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
-        
+
+        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton) 
         addButton.setImage(Resources.Images.Common.addButton, for: .normal)
     }
 }
