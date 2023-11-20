@@ -37,8 +37,20 @@ enum Resources {
         }
         
         enum Session {
-            static let navBarLeft = "Pause"
-            static let navBarRight = "Finish"
+            static let navBarStart = "Start   "
+            static let navBarPause = "Pause"
+            static let navBarFinish = "Finish"
+            
+            static let elapsedTime = "Elapsed Time"
+            static let remainingTime = "Remaining Time"
+            
+            static let workoutStats = "Workout stats"
+            static let averagePace = "Average pace"
+            static let heartRate = "Heart rate"
+            static let totalDistance = "Total distance"
+            static let totalSteps = "Total steps"
+            
+            static let stepsCounter = "Steps counter"
         }
         
         enum Progress {
@@ -66,6 +78,14 @@ enum Resources {
         enum Common {
             static let downArrow = UIImage(named: "DownArrow")
             static let addButton = UIImage(named: "addButton")
+        }
+        
+        enum Session {
+            static let heartBeat = UIImage(named: "heart_beat")
+            static let speed = UIImage(named: "speed")
+            static let steps = UIImage(named: "steps")
+            static let map = UIImage(named: "map")
+
         }
     }
     

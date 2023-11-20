@@ -30,6 +30,9 @@
 		861BC8AC2AF290B80082975B /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BC8AB2AF290B80082975B /* BaseInfoView.swift */; };
 		861BC8AF2AF393050082975B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BC8AE2AF393050082975B /* TimerView.swift */; };
 		861BC8B22AF3939C0082975B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BC8B12AF3939C0082975B /* ProgressView.swift */; };
+		86BF166C2B0B7D6A00D3E6F8 /* TimerPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF166B2B0B7D6A00D3E6F8 /* TimerPercentView.swift */; };
+		86BF16702B0B8FE900D3E6F8 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF166F2B0B8FE900D3E6F8 /* StatsView.swift */; };
+		86BF16732B0B986100D3E6F8 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16722B0B986100D3E6F8 /* StatsItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		861BC8AB2AF290B80082975B /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
 		861BC8AE2AF393050082975B /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		861BC8B12AF3939C0082975B /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		86BF166B2B0B7D6A00D3E6F8 /* TimerPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPercentView.swift; sourceTree = "<group>"; };
+		86BF166F2B0B8FE900D3E6F8 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		86BF16722B0B986100D3E6F8 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +230,8 @@
 		861BC8AD2AF392ED0082975B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				86BF166E2B0B8D8900D3E6F8 /* Steps */,
+				86BF166D2B0B8D7F00D3E6F8 /* Stats */,
 				861BC8B02AF3938C0082975B /* Timer */,
 			);
 			path = Views;
@@ -234,8 +242,33 @@
 			children = (
 				861BC8AE2AF393050082975B /* TimerView.swift */,
 				861BC8B12AF3939C0082975B /* ProgressView.swift */,
+				86BF166B2B0B7D6A00D3E6F8 /* TimerPercentView.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		86BF166D2B0B8D7F00D3E6F8 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				86BF16712B0B984B00D3E6F8 /* Views */,
+				86BF166F2B0B8FE900D3E6F8 /* StatsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		86BF166E2B0B8D8900D3E6F8 /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Steps;
+			sourceTree = "<group>";
+		};
+		86BF16712B0B984B00D3E6F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86BF16722B0B986100D3E6F8 /* StatsItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,10 +356,13 @@
 				861BC8992AEFD8D20082975B /* ProgressController.swift in Sources */,
 				861BC86A2AEFC5D70082975B /* AppDelegate.swift in Sources */,
 				861BC8862AEFCAB30082975B /* Resources.swift in Sources */,
+				86BF16732B0B986100D3E6F8 /* StatsItemView.swift in Sources */,
 				861BC86C2AEFC5D70082975B /* SceneDelegate.swift in Sources */,
+				86BF166C2B0B7D6A00D3E6F8 /* TimerPercentView.swift in Sources */,
 				861BC8A22AEFFE890082975B /* BaseView.swift in Sources */,
 				861BC8A72AF272730082975B /* WeekDayView.swift in Sources */,
 				861BC88D2AEFD5EB0082975B /* OverviewController.swift in Sources */,
+				86BF16702B0B8FE900D3E6F8 /* StatsView.swift in Sources */,
 				861BC8832AEFC9EC0082975B /* UIColor+Extension.swift in Sources */,
 				861BC8A92AF27DBD0082975B /* Date+Extension.swift in Sources */,
 			);
