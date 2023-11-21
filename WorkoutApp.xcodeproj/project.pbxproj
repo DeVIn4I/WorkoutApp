@@ -41,6 +41,7 @@
 		86BF16862B0CA45100D3E6F8 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16852B0CA45100D3E6F8 /* ChartsView.swift */; };
 		86BF16882B0CABB000D3E6F8 /* YaxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16872B0CABB000D3E6F8 /* YaxisView.swift */; };
 		86BF168A2B0CAEA600D3E6F8 /* XaxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16892B0CAEA600D3E6F8 /* XaxisView.swift */; };
+		86BF168C2B0CC7C800D3E6F8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF168B2B0CC7C800D3E6F8 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		86BF16852B0CA45100D3E6F8 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		86BF16872B0CABB000D3E6F8 /* YaxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaxisView.swift; sourceTree = "<group>"; };
 		86BF16892B0CAEA600D3E6F8 /* XaxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XaxisView.swift; sourceTree = "<group>"; };
+		86BF168B2B0CC7C800D3E6F8 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +325,7 @@
 				86BF16852B0CA45100D3E6F8 /* ChartsView.swift */,
 				86BF16872B0CABB000D3E6F8 /* YaxisView.swift */,
 				86BF16892B0CAEA600D3E6F8 /* XaxisView.swift */,
+				86BF168B2B0CC7C800D3E6F8 /* ChartView.swift */,
 			);
 			path = ChartsView;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				861BC8A22AEFFE890082975B /* BaseView.swift in Sources */,
 				861BC8A72AF272730082975B /* WeekDayView.swift in Sources */,
 				861BC88D2AEFD5EB0082975B /* OverviewController.swift in Sources */,
+				86BF168C2B0CC7C800D3E6F8 /* ChartView.swift in Sources */,
 				86BF16702B0B8FE900D3E6F8 /* StatsView.swift in Sources */,
 				861BC8832AEFC9EC0082975B /* UIColor+Extension.swift in Sources */,
 				861BC8A92AF27DBD0082975B /* Date+Extension.swift in Sources */,
