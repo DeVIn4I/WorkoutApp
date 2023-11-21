@@ -33,6 +33,14 @@
 		86BF166C2B0B7D6A00D3E6F8 /* TimerPercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF166B2B0B7D6A00D3E6F8 /* TimerPercentView.swift */; };
 		86BF16702B0B8FE900D3E6F8 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF166F2B0B8FE900D3E6F8 /* StatsView.swift */; };
 		86BF16732B0B986100D3E6F8 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16722B0B986100D3E6F8 /* StatsItemView.swift */; };
+		86BF16752B0C870F00D3E6F8 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16742B0C870F00D3E6F8 /* StepsView.swift */; };
+		86BF16792B0C885800D3E6F8 /* BarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16782B0C885800D3E6F8 /* BarsView.swift */; };
+		86BF167B2B0C8DF200D3E6F8 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF167A2B0C8DF200D3E6F8 /* BarView.swift */; };
+		86BF16812B0C98AA00D3E6F8 /* DailyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16802B0C98AA00D3E6F8 /* DailyPerformanceView.swift */; };
+		86BF16832B0CA21100D3E6F8 /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16822B0CA21100D3E6F8 /* MonthlyPerformanceView.swift */; };
+		86BF16862B0CA45100D3E6F8 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16852B0CA45100D3E6F8 /* ChartsView.swift */; };
+		86BF16882B0CABB000D3E6F8 /* YaxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16872B0CABB000D3E6F8 /* YaxisView.swift */; };
+		86BF168A2B0CAEA600D3E6F8 /* XaxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF16892B0CAEA600D3E6F8 /* XaxisView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +72,14 @@
 		86BF166B2B0B7D6A00D3E6F8 /* TimerPercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPercentView.swift; sourceTree = "<group>"; };
 		86BF166F2B0B8FE900D3E6F8 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		86BF16722B0B986100D3E6F8 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
+		86BF16742B0C870F00D3E6F8 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		86BF16782B0C885800D3E6F8 /* BarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsView.swift; sourceTree = "<group>"; };
+		86BF167A2B0C8DF200D3E6F8 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		86BF16802B0C98AA00D3E6F8 /* DailyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerformanceView.swift; sourceTree = "<group>"; };
+		86BF16822B0CA21100D3E6F8 /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
+		86BF16852B0CA45100D3E6F8 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		86BF16872B0CABB000D3E6F8 /* YaxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaxisView.swift; sourceTree = "<group>"; };
+		86BF16892B0CAEA600D3E6F8 /* XaxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XaxisView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +173,8 @@
 		861BC8902AEFD87D0082975B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				86BF16842B0CA43200D3E6F8 /* ChartsView */,
+				86BF16762B0C883200D3E6F8 /* BarsView */,
 				861BC89D2AEFE7ED0082975B /* WAButton.swift */,
 				861BC8AA2AF290980082975B /* Views */,
 				861BC8872AEFD1410082975B /* NavBarController.swift */,
@@ -188,6 +206,7 @@
 		861BC8942AEFD8A00082975B /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				86BF167C2B0C985900D3E6F8 /* Views */,
 				861BC8982AEFD8D20082975B /* ProgressController.swift */,
 			);
 			path = Progress;
@@ -259,6 +278,7 @@
 		86BF166E2B0B8D8900D3E6F8 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
+				86BF16742B0C870F00D3E6F8 /* StepsView.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -269,6 +289,42 @@
 				86BF16722B0B986100D3E6F8 /* StatsItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		86BF16762B0C883200D3E6F8 /* BarsView */ = {
+			isa = PBXGroup;
+			children = (
+				86BF16782B0C885800D3E6F8 /* BarsView.swift */,
+				86BF167A2B0C8DF200D3E6F8 /* BarView.swift */,
+			);
+			path = BarsView;
+			sourceTree = "<group>";
+		};
+		86BF167C2B0C985900D3E6F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				86BF167D2B0C986800D3E6F8 /* Performance */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86BF167D2B0C986800D3E6F8 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				86BF16802B0C98AA00D3E6F8 /* DailyPerformanceView.swift */,
+				86BF16822B0CA21100D3E6F8 /* MonthlyPerformanceView.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
+		86BF16842B0CA43200D3E6F8 /* ChartsView */ = {
+			isa = PBXGroup;
+			children = (
+				86BF16852B0CA45100D3E6F8 /* ChartsView.swift */,
+				86BF16872B0CABB000D3E6F8 /* YaxisView.swift */,
+				86BF16892B0CAEA600D3E6F8 /* XaxisView.swift */,
+			);
+			path = ChartsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,17 +402,25 @@
 				861BC8802AEFC9520082975B /* TabBarController.swift in Sources */,
 				861BC8A02AEFFE620082975B /* OverviewNavBar.swift in Sources */,
 				861BC8882AEFD1410082975B /* NavBarController.swift in Sources */,
+				86BF16832B0CA21100D3E6F8 /* MonthlyPerformanceView.swift in Sources */,
 				861BC88B2AEFD3130082975B /* BaseController.swift in Sources */,
+				86BF16882B0CABB000D3E6F8 /* YaxisView.swift in Sources */,
 				861BC88F2AEFD6900082975B /* UIView+Extension.swift in Sources */,
 				861BC8972AEFD8BC0082975B /* SessionController.swift in Sources */,
 				861BC89E2AEFE7ED0082975B /* WAButton.swift in Sources */,
+				86BF16812B0C98AA00D3E6F8 /* DailyPerformanceView.swift in Sources */,
 				861BC8AC2AF290B80082975B /* BaseInfoView.swift in Sources */,
 				861BC8AF2AF393050082975B /* TimerView.swift in Sources */,
 				861BC8B22AF3939C0082975B /* ProgressView.swift in Sources */,
+				86BF16792B0C885800D3E6F8 /* BarsView.swift in Sources */,
 				861BC8992AEFD8D20082975B /* ProgressController.swift in Sources */,
+				86BF16752B0C870F00D3E6F8 /* StepsView.swift in Sources */,
+				86BF168A2B0CAEA600D3E6F8 /* XaxisView.swift in Sources */,
+				86BF16862B0CA45100D3E6F8 /* ChartsView.swift in Sources */,
 				861BC86A2AEFC5D70082975B /* AppDelegate.swift in Sources */,
 				861BC8862AEFCAB30082975B /* Resources.swift in Sources */,
 				86BF16732B0B986100D3E6F8 /* StatsItemView.swift in Sources */,
+				86BF167B2B0C8DF200D3E6F8 /* BarView.swift in Sources */,
 				861BC86C2AEFC5D70082975B /* SceneDelegate.swift in Sources */,
 				86BF166C2B0B7D6A00D3E6F8 /* TimerPercentView.swift in Sources */,
 				861BC8A22AEFFE890082975B /* BaseView.swift in Sources */,

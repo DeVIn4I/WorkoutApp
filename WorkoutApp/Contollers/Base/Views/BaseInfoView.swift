@@ -17,7 +17,7 @@ class BaseInfoView: BaseView {
     
     private let button = WAButton(with: .primary)
     
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderColor = Resources.Colors.separator.cgColor
@@ -29,7 +29,7 @@ class BaseInfoView: BaseView {
     init(with title: String? = nil, buttonTitle: String? = nil) {
         titleLabel.text = title?.uppercased()
         titleLabel.textAlignment = buttonTitle == nil ? .center : .left
-        button.setTitle(buttonTitle)
+        button.setTitle(buttonTitle?.uppercased())
         button.isHidden = buttonTitle != nil ? false : true
         super.init(frame: .zero)
     }

@@ -19,7 +19,7 @@ final class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        switchToTab(.session)
+        switchToTab(.progress)
     }
     
     private func configure() {

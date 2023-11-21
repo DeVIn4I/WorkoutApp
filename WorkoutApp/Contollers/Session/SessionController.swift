@@ -11,7 +11,7 @@ final class SessionController: BaseController {
     
     private let timerView = TimerView()
     private let statsView = StatsView(with: Resources.Strings.Session.workoutStats.uppercased())
-    private let stepsView = BaseInfoView(with: Resources.Strings.Session.stepsCounter.uppercased())
+    private let stepsView = StepsView(with: Resources.Strings.Session.stepsCounter.uppercased())
     
     private let timerDuration = 5.0
     
@@ -63,8 +63,7 @@ extension SessionController {
         NSLayoutConstraint.activate([
             statsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             statsView.topAnchor.constraint(equalTo: timerView.bottomAnchor, constant: 12),
-            statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -8),
-            statsView.heightAnchor.constraint(equalToConstant: 200)
+            statsView.trailingAnchor.constraint(equalTo: view.centerXAnchor, constant: -8)
         ])
         
         NSLayoutConstraint.activate([
@@ -90,5 +89,16 @@ extension SessionController {
                 self.navBarRightButtonHandler()
             }
         }
+        
+        statsView.configure(with: [.heartRate(value: "155"), .averagePace(value: "8'20''"), .totalSteps(value: "7,682"), .totalDistance(value: "8.25")])
+        
+        stepsView.configure(
+            with: [
+                .init(value: "8k", title: "2/13", heightParam: 1),
+                .init(value: "7k", title: "2/14", heightParam: 0.8),
+                .init(value: "5k", title: "2/15", heightParam: 0.6),
+                .init(value: "6k", title: "2/16", heightParam: 0.7),
+            ]
+        )
     }
 }

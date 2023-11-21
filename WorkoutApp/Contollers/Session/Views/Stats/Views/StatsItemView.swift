@@ -7,9 +7,41 @@
 
 import UIKit
 
+enum StatsItem {
+    case heartRate(value: String)
+    case averagePace(value: String)
+    case totalDistance(value: String)
+    case totalSteps(value: String)
+    
+    var data: StatsItemView.ItemData {
+        switch self {
+        case .heartRate(let value):
+            return .init(image: Resources.Images.Session.heartBeat,
+                         value: "\(value) bpm",
+                         title: Resources.Strings.Session.heartRate.uppercased()
+            )
+        case .averagePace(let value):
+            return .init(image: Resources.Images.Session.speed,
+                         value: "\(value) / km",
+                         title: Resources.Strings.Session.averagePace.uppercased()
+            )
+        case .totalSteps(let value):
+            return .init(image: Resources.Images.Session.steps,
+                         value: "\(value)",
+                         title: Resources.Strings.Session.stepsCounter.uppercased()
+            )
+        case .totalDistance(let value):
+            return .init(image: Resources.Images.Session.map,
+                         value: "\(value) km",
+                         title: Resources.Strings.Session.totalDistance.uppercased()
+            )
+        }
+    }
+}
+
 final class StatsItemView: BaseView {
     
-    struct StatsItem {
+    struct ItemData {
         let image: UIImage?
         let value: String
         let title: String
@@ -37,9 +69,9 @@ final class StatsItemView: BaseView {
     }()
     
     func configure(with item: StatsItem) {
-        imageView.image = item.image
-        valueLabel.text = item.value
-        titleLabel.text = item.title
+        imageView.image = item.data.image
+        valueLabel.text = item.data.value
+        titleLabel.text = item.data.title.uppercased()
     }
 }
 
@@ -60,7 +92,8 @@ extension StatsItemView {
         NSLayoutConstraint.activate([
             imageView.centerYAnchor.constraint(equalTo: centerYAnchor),
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            imageView.widthAnchor.constraint(equalToConstant: 23)
+            imageView.widthAnchor.constraint(equalToConstant: 23),
+            imageView.heightAnchor.constraint(equalToConstant: 23)
         ])
         
         NSLayoutConstraint.activate([
