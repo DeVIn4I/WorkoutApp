@@ -81,6 +81,13 @@ enum Resources {
             }
         }
         
+        enum Overview {
+            static let rightArrow = UIImage(named: "right_arrow")
+            static let oval = UIImage(named: "oval")
+            static let checked = UIImage(named: "checked")
+
+        }
+        
         enum Common {
             static let downArrow = UIImage(named: "DownArrow")
             static let addButton = UIImage(named: "addButton")
