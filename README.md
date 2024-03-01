@@ -1,7 +1,9 @@
 # WorkoutApp
 
 <p float="center">
-<img src="https://github.com/DeVIn4I/BrightSky/blob/main/Assets/Screen.gif" width="220" height="450">
+<img src="https://github.com/DeVIn4I/BrightSky/blob/main/Assets/Screen1.gif" width="220" height="450">
+<img src="https://github.com/DeVIn4I/BrightSky/blob/main/Assets/Screen2.gif" width="220" height="450">
+<img src="https://github.com/DeVIn4I/BrightSky/blob/main/Assets/Screen3.gif" width="220" height="450">
 </p>
 
 ---
